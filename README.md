@@ -3,7 +3,7 @@ This is a Sentinel-2A cloud removal dataset in which the paired cloud and cloud-
 The details of the dataset are introduced in datadoc.docx
 The dataset can be downloaded on:https://pan.baidu.com/s/1tcTaDWb_rTf4FezmzUsuLA
 
-Distributions of training and testing data. Training areas are marked in blue, testing areas are marked in red. The number in the left of each area is corresponding to each number in Table 2. The landcover background is derived from 300 m annual global land cover time series from 1992 to 2015 (Defourny et al., 2017)  
+Distributions of training and testing data. Training areas are marked in white, testing areas are marked in black. The landcover background is derived from 300 m annual global land cover time series from 1992 to 2015 (Defourny et al., 2017)  
 ![WHUS2-CR.png](https://i.loli.net/2020/12/23/XSh6YCA23fnMQiZ.png)  
 
 Reference  
