@@ -4,6 +4,14 @@ Created on Fri Dec  7 16:56:44 2018
 
 @author: lijun
 """
+"""
+This model is based on Tensorflow-1.14.
+How to use? out1,out2=CRMSS(img1,img2,reuse=False)
+img1 and img2 are inputs that are nomalized between 0~1.
+out1 and out2 are corresponding cloud removal results for img1 and img2.
+If you use this dataset for your research, please cite us accordingly:
+Li, J., Wu, Z.C., Hu, Z.W., Li Z.L., Wang, Y.S., Molinier, M., 2021. Deep learning based thin cloud removal fusing vegetation red edge and short wave infrared spectral information for Sentinel-2A imagery. Remote Sens. 13(1), 157.
+"""
 import tensorflow as tf
 def make_var(name, shape, trainable = True):
     return tf.get_variable(name, shape, trainable = trainable)
