@@ -7,5 +7,5 @@ Distributions of training and testing data. Training areas are marked in white, 
 ![WHUS2-CR.png](https://i.loli.net/2020/12/23/XSh6YCA23fnMQiZ.png)  
 
 If you use this dataset for your research, please cite us accordingly:  
-Li, J., Wu, Z.C., Hu, Z.W., Li Z.L., Wang, Y.S., and Molinier, M., 2021. Deep learning based thin cloud removal fusing vegetation red edge and short wave infrared spectral information for Sentinel-2A imagery. Remote Sens. 13(1), 157. doi: https://doi.org/10.3390/rs13010157.
+Li, J., Wu, Z.C., Hu, Z.W., Li, Z.L., Wang, Y.S., and Molinier, M., 2021. Deep learning based thin cloud removal fusing vegetation red edge and short wave infrared spectral information for Sentinel-2A imagery. Remote Sens. 13(1), 157. doi: https://doi.org/10.3390/rs13010157.
 
