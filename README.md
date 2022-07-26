@@ -4,6 +4,8 @@ The details of the dataset are introduced in datadoc.docx
 The dataset can be downloaded on: http://doi.org/10.5281/zenodo.5607356.  
 https://pan.baidu.com/s/1pqiQIX8ikRwJpke9z1BltQ.  Extraction code: s2cr.
 
+The environmental dependencies are listed in CRMSS.yml. Researchers can re-produce the training dataset by running cutimg.py.
+
 Distributions of training and testing data. Training areas are marked in white, testing areas are marked in black. The landcover background is derived from 300 m annual global land cover time series from 1992 to 2015 (Defourny et al., 2017)  
 ![WHUS2-CR.png](https://i.loli.net/2020/12/23/XSh6YCA23fnMQiZ.png)  
 
