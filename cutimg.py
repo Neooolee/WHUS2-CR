@@ -17,8 +17,8 @@ sourcedir
         /20m/file1.tif...filen.tif   (6 bands 5/6/7/8A/11/12)
 """
  
-sourcedir='F:/WHU/WHUS2-CR/composite/cloud/'#source dir  
-#sourcedir='F:/WHU/WHUS2-CR/composite/clear/'#source dir
+sourcedir='F:/WHU/WHUS2-CR/cloud/'#source dir  
+#sourcedir='F:/WHU/WHUS2-CR/clear/'#source dir
 names=['10m','20m']
 window_sizes,strides=[256,128],[256,128]
 
@@ -48,3 +48,4 @@ def multi_dir(filedir,window_size,stride):
     cut_data(filedir,window_size,stride)
 for i in range(len(names)):  
     multi_dir(sourcedir+names[i],window_sizes[i],strides[i])
+os.system("python select.py")
