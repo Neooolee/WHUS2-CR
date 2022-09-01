@@ -17,8 +17,8 @@ sourcedir
         /20m/file1.tif...filen.tif   (6 bands 5/6/7/8A/11/12)
 """
  
-sourcedir='F:/WHU/WHUS2-CR/cloud/'#source dir  
-#sourcedir='F:/WHU/WHUS2-CR/clear/'#source dir
+sourcedir='F:/WHU/WHUS2-CR/composite/cloud/'#source dir  
+#sourcedir='F:/WHU/WHUS2-CR/composite/clear/'#source dir
 names=['10m','20m']
 window_sizes,strides=[256,128],[256,128]
 
@@ -28,7 +28,7 @@ def cut_data(filedir,window_size,stride):
         filepath=filedirs[i]
         print(filepath)
         savedirname=filepath.split('\\')[-1].split('.tif')[0][33:44]
-        savedirpath=filedir+'clips\\'+savedirname
+        savedirpath=filedir.replace("composite",'clips')+"/"+savedirname
         if not os.path.exists(savedirpath):
             os.makedirs(savedirpath)
         img = imgread(filepath)
