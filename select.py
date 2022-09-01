@@ -12,16 +12,13 @@ import openpyxl
 """
  By running fuseimg.py and cutimg.py on cloud files and clear files, repectively, the file will be organized as:
 commendir
-         /10mclips/imagename/patch1.tif...patchn.tif
-         /20mclips/imagename/patch1.tif...patchn.tif
-commendir
-         /10mclips/imagename/patch1.tif...patchn.tif
-         /20mclips/imagename/patch1.tif...patchn.tif
+         /10m/imagename/patch1.tif...patchn.tif
+         /20m/imagename/patch1.tif...patchn.tif
 """
-commendir='F:/WHU/WHUS2-CR/composite/cloud/'#source dir
-#commendir='F:/WHU/WHUS2-CR/composite/clear/'#source dir
+commendir='F:/WHU/WHUS2-CR/clips/cloud/'#source dir
+#commendir='F:/WHU/WHUS2-CR/clips/clear/'#source dir
 filedirs=["cloud/","clear/"]
-targetnames=['10mclips','20mclips']
+targetnames=['10m','20m']
 filetypes=['train','test']
 savedirname="selected/"  
 def selectfromxls(xlpath,filedir,targetname):
