@@ -22,7 +22,8 @@ sourcedir='F:/WHU/WHUS2-CR/cloud/'#sourcedir
 #sourcedir='F:/WHU/WHUS2-CR/clear/'#sourcedir
 name='unziped'
 sourcepath=sourcedir+name#the unziped file path
-savepath=sourcedir+"composite"#savepath
+savepath='F:/WHU/WHUS2-CR/composite/cloud'#savepath
+#savepath='F:/WHU/WHUS2-CR/composite/clear'#savepath
 bands = [['10m','02','03','04','08'],['20m','05','06','07','8A','11','12'],['60m','01','09','10']]
 def fuse_DN(path1):
     filename=path1.split('\\')[-1].split('.SAFE')[0]#[33:44]
