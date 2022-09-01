@@ -18,8 +18,8 @@ commendir
          /10mclips/imagename/patch1.tif...patchn.tif
          /20mclips/imagename/patch1.tif...patchn.tif
 """
-commendir='F:/WHU/WHUS2-CR/cloud/composite/'#source dir
-#commendir='F:/WHU/WHUS2-CR/clear/composite/'#source dir
+commendir='F:/WHU/WHUS2-CR/composite/cloud/'#source dir
+#commendir='F:/WHU/WHUS2-CR/composite/clear/'#source dir
 filedirs=["cloud/","clear/"]
 targetnames=['10mclips','20mclips']
 filetypes=['train','test']
