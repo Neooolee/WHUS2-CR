@@ -25,7 +25,8 @@ def unzip_file(zip_file_name,zip_output_dir, mode='rb'):
 
     return namelist[0]
        
-origin_dir = "F:/WHU/WHUS2-CD+/aa/"
+origin_dir = "F:/WHU/WHUS2-CR/cloud/"
+#origin_dir = "F:/WHU/WHUS2-CR/clear/"
 pattern = ".zip"
 name='unziped'
 zippedoutput_dir =origin_dir+name
