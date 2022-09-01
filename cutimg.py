@@ -15,13 +15,12 @@ The source file should be organized as follows by running fuseimg.py first:
 sourcedir
         /10m/file1.tif...filen.tif   (4 bands 2/3/4/8)
         /20m/file1.tif...filen.tif   (6 bands 5/6/7/8A/11/12)
-        /60m/file1.tif...filen.tif   (3 bands 1/9/10)
 """
  
 sourcedir='F:/WHU/WHUS2-CR/cloud/composite/'#source dir  
 #sourcedir='F:/WHU/WHUS2-CR/clear/composite/'#source dir
-names=['10m','20m','60m']
-window_sizes,strides=[384,192,64],[384,192,64]
+names=['10m','20m']
+window_sizes,strides=[256,128],[256,128]
 
 def cut_data(filedir,window_size,stride):
     filedirs=glob.glob(os.path.join(filedir, '*'))
