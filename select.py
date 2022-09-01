@@ -12,21 +12,18 @@ import openpyxl
 """
  the file should be first organized as:
 commendir
-        /cloud
-             /10mclips/imagename/patch1.tif...patchn.tif
-             /20mclips/imagename/patch1.tif...patchn.tif
-             /60mclips/imagename/patch1.tif...patchn.tif
+         /10mclips/imagename/patch1.tif...patchn.tif
+         /20mclips/imagename/patch1.tif...patchn.tif
 commendir
-        /clear
-             /10mclips/imagename/patch1.tif...patchn.tif
-             /20mclips/imagename/patch1.tif...patchn.tif
-             /60mclips/imagename/patch1.tif...patchn.tif
+         /10mclips/imagename/patch1.tif...patchn.tif
+         /20mclips/imagename/patch1.tif...patchn.tif
 """
-commendir='F:/WHU/WHUS2-CR/composite/'#source dir
+commendir='F:/WHU/WHUS2-CR/cloud/composite/'#source dir
+#commendir='F:/WHU/WHUS2-CR/clear/composite/'#source dir
 filedirs=["cloud/","clear/"]
-targetnames=['10mclips','20mclips','60mclips']
+targetnames=['10mclips','20mclips']
 filetypes=['train','test']
-  
+savedirname="selected/"  
 def selectfromxls(xlpath,filedir,targetname):
     wb=openpyxl.load_workbook(xlpath)
     for filetype in filetypes:
@@ -34,7 +31,7 @@ def selectfromxls(xlpath,filedir,targetname):
         for i in range(1,ws.max_row+1):
             name = str(ws.cell(row=i,column=1).value)
             pairpath=commendir+filedir+targetname+name
-            savedir = commendir+"selected/"+filedir+targetname+'/'+name.split('/')[1]
+            savedir = commendir+savedirname+filedir+targetname+'/'+name.split('/')[1]
             if not os.path.exists(pairpath): 
                 continue
             if not os.path.exists(savedir): 
