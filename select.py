@@ -11,22 +11,12 @@ from gdaldiy import *
 import openpyxl
 """
  the file should be organized as:
- ./train
+commendir
         /cloud
              /10mclips/imagename/patch_Id.tif
              /20mclips/imagename/patch_Id.tif
              /60mclips/imagename/patch_Id.tif
-  ./train
-        /clear
-             /10mclips/imagename/patch_Id.tif
-             /20mclips/imagename/patch_Id.tif
-             /60mclips/imagename/patch_Id.tif
- ./test
-        /cloud
-             /10mclips/imagename/patch_Id.tif
-             /20mclips/imagename/patch_Id.tif
-             /60mclips/imagename/patch_Id.tif
- ./test
+commendir
         /clear
              /10mclips/imagename/patch_Id.tif
              /20mclips/imagename/patch_Id.tif
