@@ -18,7 +18,8 @@ sourcedir
         /60m/file1.tif...filen.tif   (3 bands 1/9/10)
 """
  
-sourcedir='F:/WHU/WHUS2-CD+/composite/cloud/'#source dir  
+sourcedir='F:/WHU/WHUS2-CR/cloud/composite/'#source dir  
+#sourcedir='F:/WHU/WHUS2-CR/clear/composite/'#source dir
 names=['10m','20m','60m']
 window_sizes,strides=[384,192,64],[384,192,64]
 
