@@ -10,17 +10,17 @@ import glob
 from gdaldiy import *
 import openpyxl
 """
- the file should be organized as:
+ the file should be first organized as:
 commendir
         /cloud
-             /10mclips/imagename/patch_Id.tif
-             /20mclips/imagename/patch_Id.tif
-             /60mclips/imagename/patch_Id.tif
+             /10mclips/imagename/patch1.tif...patchn.tif
+             /20mclips/imagename/patch1.tif...patchn.tif
+             /60mclips/imagename/patch1.tif...patchn.tif
 commendir
         /clear
-             /10mclips/imagename/patch_Id.tif
-             /20mclips/imagename/patch_Id.tif
-             /60mclips/imagename/patch_Id.tif
+             /10mclips/imagename/patch1.tif...patchn.tif
+             /20mclips/imagename/patch1.tif...patchn.tif
+             /60mclips/imagename/patch1.tif...patchn.tif
 """
 commendir='F:/WHU/WHUS2-CR/composite/'#source dir
 filedirs=["cloud/","clear/"]
