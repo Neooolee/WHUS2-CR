@@ -10,7 +10,7 @@ import glob
 from gdaldiy import *
 import openpyxl
 """
- the file should be first organized as:
+ By running fuseimg.py and cutimg.py on cloud files and clear files, repectively, the file will be organized as:
 commendir
          /10mclips/imagename/patch1.tif...patchn.tif
          /20mclips/imagename/patch1.tif...patchn.tif
