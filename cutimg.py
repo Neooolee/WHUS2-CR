@@ -11,14 +11,14 @@ import glob
 from gdaldiy import *
 
 """
-The source file should be organized as follows by running fuseimg.py first:
+By running fuseimg.py on cloud and clear files, respectively, the source file will be organized as:
 sourcedir
         /10m/file1.tif...filen.tif   (4 bands 2/3/4/8)
         /20m/file1.tif...filen.tif   (6 bands 5/6/7/8A/11/12)
 """
  
-sourcedir='F:/WHU/WHUS2-CR/cloud/composite/'#source dir  
-#sourcedir='F:/WHU/WHUS2-CR/clear/composite/'#source dir
+sourcedir='F:/WHU/WHUS2-CR/composite/cloud/'#source dir  
+#sourcedir='F:/WHU/WHUS2-CR/composite/clear/'#source dir
 names=['10m','20m']
 window_sizes,strides=[256,128],[256,128]
 
