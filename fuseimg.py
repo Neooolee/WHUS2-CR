@@ -12,14 +12,15 @@ from gdaldiy import *
 
 '''
 The source zip file should be unziped and organized as follows:
-sourcedir
-        /S2A_MSIL1C_20180429T032541_N0206_R018_T49SCV_20180429T062304.SAFE
-                                                                         /AUX_DATA...
-        /S2A_MSIL1C_20180722T030541_N0206_R075_T49RFP_20180722T060550.SAFE
-                                                                          /AUX_DATA...
+sourcepath
+         /S2A_MSIL1C_20180429T032541_N0206_R018_T49SCV_20180429T062304.SAFE
+                                                                           /AUX_DATA...
+         /S2A_MSIL1C_20180722T030541_N0206_R075_T49RFP_20180722T060550.SAFE
+                                                                           /AUX_DATA...
 '''
-sourcedir='F:/WHU/WHUS2-CD+/'#sourcedir
-name='trainunziped'
+sourcedir='F:/WHU/WHUS2-CR/cloud/'#sourcedir
+#sourcedir='F:/WHU/WHUS2-CR/clear/'#sourcedir
+name='unziped'
 sourcepath=sourcedir+name#the unziped file path
 savepath=sourcedir+"composite"#savepath
 bands = [['10m','02','03','04','08'],['20m','05','06','07','8A','11','12'],['60m','01','09','10']]
